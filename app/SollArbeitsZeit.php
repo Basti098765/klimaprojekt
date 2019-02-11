@@ -8,4 +8,5 @@ class SollArbeitsZeit extends Model
 {
     protected $table = 'tbl_sollArbeitsZeit';
      protected $primaryKey = 'sollId';
+     
 }
