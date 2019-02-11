@@ -13,7 +13,7 @@ class CreateArbeitAmProjektsTable extends Migration
      */
     public function up()
     {
-        Schema::create('arbeit_am_projekts', function (Blueprint $table) {
+        Schema::create('tbl_arbeitAmProjekt', function (Blueprint $table) {
             $table->increments('aapid');
             $table->string('aapGesamtZeit');
             $table->integer('pjId');

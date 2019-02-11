@@ -13,10 +13,10 @@ class CreateSollArbeitsZeitsTable extends Migration
      */
     public function up()
     {
-        Schema::create('soll_arbeits_zeits', function (Blueprint $table) {
+        Schema::create('tbl_sollArbeitsZeit', function (Blueprint $table) {
             $table->increments('sollId');
-            $table->string('sollVon');
-            $table->string('sollBis');
+            $table->dateTime('sollVon');
+            $table->dateTime('sollBis');
             $table->string('sollBemerkung');
             $table->string('sWochenTag');
             $table->integer('stId');

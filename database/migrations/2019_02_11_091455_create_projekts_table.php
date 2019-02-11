@@ -13,7 +13,7 @@ class CreateProjektsTable extends Migration
      */
     public function up()
     {
-        Schema::create('projekts', function (Blueprint $table) {
+        Schema::create('tbl_projekte', function (Blueprint $table) {
             $table->increments('pjId');
             $table->string('pjName');
             $table->string('pjLink');

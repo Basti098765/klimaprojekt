@@ -13,10 +13,10 @@ class CreateAnwesenheitsTable extends Migration
      */
     public function up()
     {
-        Schema::create('anwesenheits', function (Blueprint $table) {
+        Schema::create('tbl_anwesenheit', function (Blueprint $table) {
             $table->increments('awId');
-            $table->string('awVon');
-            $table->string('awBis');
+            $table->dateTime('awVon');
+            $table->dateTime('awBis');
             $table->string('awBemerkung');
             $table->integer('stId');
             $table->timestamps();

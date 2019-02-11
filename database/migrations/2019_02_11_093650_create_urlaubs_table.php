@@ -13,7 +13,7 @@ class CreateUrlaubsTable extends Migration
      */
     public function up()
     {
-        Schema::create('urlaubs', function (Blueprint $table) {
+        Schema::create('tbl_urlaub', function (Blueprint $table) {
             $table->increments('uId');
             $table->string('uGuthabenVorjahr');
             $table->string('uGuthabenAktuell');

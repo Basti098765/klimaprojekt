@@ -13,7 +13,7 @@ class CreateStammdatensTable extends Migration
      */
     public function up()
     {
-        Schema::create('stammdatens', function (Blueprint $table) {
+        Schema::create('tbl_stammdaten', function (Blueprint $table) {
             $table->increments('stId');
             $table->string('stDienststelle');
             $table->string('stJahr');

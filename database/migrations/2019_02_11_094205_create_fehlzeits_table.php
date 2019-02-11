@@ -13,10 +13,10 @@ class CreateFehlzeitsTable extends Migration
      */
     public function up()
     {
-        Schema::create('fehlzeits', function (Blueprint $table) {
-            $table->increments('fid');
-            $table->string('fVon');
-            $table->string('fBis');
+        Schema::create('tbl_fehlzeiten', function (Blueprint $table) {
+            $table->increments('fId');
+            $table->dateTime('fVon');
+            $table->dateTime('fBis');
             $table->string('fBemerkung');
             $table->integer('stID');
             $table->timestamps();
